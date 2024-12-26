@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="css/pay.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Payment Page</h1>
+        <form id="paymentForm">
+            <div class="form-group">
+                <label for="paymentMethod">Select Payment Method:</label>
+                <select id="paymentMethod" name="paymentMethod">
+                    <option value="">Select Payment Method</option>
+                    <option value="card">Credit/Debit Card</option>
+                    <option value="upi">UPI</option>
+                    <option value="emi">EMI</option>
+                </select>
+            </div>
+
+            <!-- Card Details -->
+            <div class="form-group card-details">
+                <label for="cardNumber">Card Number:</label>
+                <input type="text" id="cardNumber" name="cardNumber">
+                <span class="error-message"></span>
+            </div>
+            <div class="form-group card-details">
+                <label for="expiry">Expiry Date (MM/YYYY):</label>
+                <input type="text" id="expiry" name="expiry">
+                <span class="error-message"></span>
+            </div>
+            <div class="form-group card-details">
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv">
+                <span class="error-message"></span>
+            </div>
+
+            <!-- UPI Details -->
+            <div class="form-group upi-details">
+                <label for="upiId">UPI ID:</label>
+                <input type="text" id="upiId" name="upiId">
+                <span class="error-message"></span>
+            </div>
+
+            <!-- EMI Details -->
+            <div class="form-group emi-details">
+                <label for="emiOptions">EMI Options:</label>
+                <select id="emiOptions" name="emiOptions">
+                    <option value="">Select EMI Option</option>
+                    <option value="3">3 months</option>
+                    <option value="6">6 months</option>
+                    <option value="9">9 months</option>
+                    <option value="12">12 months</option>
+                </select>
+                <span class="error-message"></span>
+            </div>
+
+            <button type="submit">Pay Now</button>
+        </form>
+    </div>
+
+    <script src="js/pay.js"></script>
+</body>
+</html>
+

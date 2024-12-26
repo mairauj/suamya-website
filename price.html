@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="css/price.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+
+<header class="header">
+    <a href="#" class="logo"> <i class="fas fa-shopping-cart"></i> Shopping </a>
+</header>
+
+<section class="cart">
+    <div class="heading">
+        <h3>Your Cart</h3>
+        <p><a href="index.html">Home</a> / Cart</p>
+    </div>
+
+    <div class="progress-bar">
+        <div class="step">
+            <div class="bullet">1</div>
+            <p>Cart</p>
+        </div>
+        <div class="step">
+            <div class="bullet active">2</div>
+            <p>Review</p>
+        </div>
+        <div class="step">
+            <div class="bullet">3</div>
+            <p>Payment</p>
+        </div>
+    </div>
+
+    <div class="cart-items">
+        <!-- Example product in the cart -->
+        <div class="box">
+            <img src="images/cart-img-1.jpg" alt="Product">
+            <div class="content">
+                <h3>Product Name</h3>
+                <span>$50</span>
+                <input type="number" value="1" min="1">
+                <button class="remove-item">Remove</button>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/cart-img-2.jpg" alt="Product">
+            <div class="content">
+                <h3>Product Name</h3>
+                <span>$50</span>
+                <input type="number" value="1" min="1">
+                <button class="remove-item">Remove</button>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/cart-img-3.jpg" alt="Product">
+            <div class="content">
+                <h3>Product Name</h3>
+                <span>$50</span>
+                <input type="number" value="1" min="1">
+                <button class="remove-item">Remove</button>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/cart-img-4.jpg" alt="Product">
+            <div class="content">
+                <h3>Product Name</h3>
+                <span>$50</span>
+                <input type="number" value="1" min="1">
+                <button class="remove-item">Remove</button>
+            </div>
+        </div>
+        <!-- Add more products as needed -->
+    </div>
+
+    <div class="total">
+        <p>Total: $<span id="total-price">50</span></p>
+        <button class="btn" id="proceed-payment">Proceed to Payment</button>
+    </div>
+</section>
+
+<script src="js/price.js"></script>
+</body>
+</html>
